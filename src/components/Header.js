@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import BasicButton from './elements/buttons/BasicButton';
-import CTAButton from './elements/buttons/CTAButton';
+import BasicButton from '../elements/buttons/BasicButton';
+import CTAButton from '../elements/buttons/CTAButton';
 
 const Container = styled.header({
   marginTop: '80px',

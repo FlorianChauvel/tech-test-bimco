@@ -1,5 +1,5 @@
 export const COLORS = {
-    BUTTON_TEXT: '#42526E',
+    TEXT: '#42526E',
     BUTTON_TEXT_HOVERED: '#0075F6',
     BUTTON_BACKGROUND: '#FFFFFF',
     BUTTON_BACKGROUND_HOVERED: 'rgba(0, 117, 246, 0.1)',
@@ -10,7 +10,8 @@ export const COLORS = {
 };
 
 export const FONT_SIZES = {
-    BUTTON: '14px',
+    TEXT: '14px',
+    TITLE: '24px',
 };
 
 export const FONT_WEIGHTS = {

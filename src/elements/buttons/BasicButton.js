@@ -7,14 +7,14 @@ const BasicButton = styled.button({
     padding: '10px 20px',
     display: 'inline-block',
     fontWeight: FONT_WEIGHTS.BOLD,
-    color: COLORS.BUTTON_TEXT,
+    color: COLORS.TEXT,
     backgroundColor: COLORS.BUTTON_BACKGROUND,
     transition: 'color .5s, background-color .5s',
     ' &:hover': {
         color: COLORS.BUTTON_TEXT_HOVERED,
         backgroundColor: COLORS.BUTTON_BACKGROUND_HOVERED,
     },
-    fontSize: FONT_SIZES.BUTTON,
+    fontSize: FONT_SIZES.TEXT,
 });
 
 export default BasicButton;
