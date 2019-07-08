@@ -1,20 +1,22 @@
 import styled from '@emotion/styled';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS } from '../../styles';
 
-const BasicButton = styled.button({
+const BasicButton = styled.button(
+({ active }) =>    
+({
     border: 'none',
     borderRadius: '4px',
     padding: '10px 20px',
     display: 'inline-block',
     fontWeight: FONT_WEIGHTS.BOLD,
-    color: COLORS.TEXT,
-    backgroundColor: COLORS.BUTTON_BACKGROUND,
+    color: active ? COLORS.BUTTON_TEXT_HOVERED : COLORS.TEXT,
+    backgroundColor: active ? COLORS.BUTTON_BACKGROUND_HOVERED : COLORS.BUTTON_BACKGROUND,
     transition: 'color .5s, background-color .5s',
     ' &:hover': {
         color: COLORS.BUTTON_TEXT_HOVERED,
         backgroundColor: COLORS.BUTTON_BACKGROUND_HOVERED,
     },
     fontSize: FONT_SIZES.TEXT,
-});
+}));
 
 export default BasicButton;

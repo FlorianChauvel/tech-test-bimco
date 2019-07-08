@@ -18,7 +18,7 @@ const SubHeader = styled.div({
 const Header = () => (
     <Container>
         <SubHeader>
-            <BasicButton>Explorer Onfly</BasicButton>
+            <BasicButton active>Explorer Onfly</BasicButton>
             <BasicButton>Découvrez nos services</BasicButton>
             <BasicButton>Ressources</BasicButton>
             <BasicButton>Blog</BasicButton>

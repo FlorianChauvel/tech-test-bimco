@@ -18,7 +18,7 @@ const Column = styled.div({
     width: '33%',
     display: 'flex',
     flexFlow: 'column nowrap',
-    justifyContent: 'space-evenly',
+    justifyContent: 'space-around',
     alignItems: 'center',
     padding: '30px',
 });
@@ -26,6 +26,8 @@ const Column = styled.div({
 const Img = styled.img({
     width: '33%',
     height: '33%',
+    marginTop: '80px',
+    marginBottom: '80px',
 });
 
 const Text = styled.span({

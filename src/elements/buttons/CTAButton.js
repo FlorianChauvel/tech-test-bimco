@@ -3,6 +3,7 @@ import { COLORS } from '../../styles';
 import BasicButton from './BasicButton';
 
 const CTAButton = styled(BasicButton)({
+    fontWeight: 500,
     color: COLORS.CTA_TEXT,
     backgroundColor: COLORS.CTA_BACKGROUND,
     ' &:hover': {

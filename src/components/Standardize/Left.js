@@ -4,6 +4,7 @@ import { COLORS, FONT_SIZES } from '../../styles';
 
 const Container = styled.div({
     width: '80%',
+    margin: 'auto',
     display: 'flex',
     flexFlow: 'column nowrap',
     justifyContent: 'center',
@@ -18,7 +19,6 @@ const Title = styled.h2({
 const Text = styled.p({
     color: COLORS.TEXT,
     fontSize: FONT_SIZES.TEXT,
-    verticalAlign: 'center',
 });
 
 const Left = () => (
