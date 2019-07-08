@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import { COLORS, FONT_SIZES } from '../../styles';
+import { COLORS } from '../../styles';
 import BasicButton from './BasicButton';
 
 const CTAButton = styled(BasicButton)({

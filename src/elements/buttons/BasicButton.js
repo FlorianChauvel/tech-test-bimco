@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from '@emotion/styled';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS } from '../../styles';
 
