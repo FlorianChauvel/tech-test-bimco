@@ -11,7 +11,7 @@ import formeBleu from '../../assets/Forme_Bleu.svg';
 
 const Wrapper = styled.div({
     position: 'relative',
-    height: '200px',
+    height: '100px',
     width: '2000px',
     overflowY: 'visible',
     overflowX: 'visible',
