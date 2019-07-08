@@ -10,7 +10,7 @@ import Footer from './Footer';
 import formeBleu from '../../assets/Forme_Bleu.svg';
 
 const Section = styled(ShadowSection)({
-    marginTop: '100px',
+    marginTop: '250px',
 });
 
 const Wrapper = styled.div({
