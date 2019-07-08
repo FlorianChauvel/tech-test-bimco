@@ -6,20 +6,28 @@ import Advantages from './components/Advantages';
 import Standardize from './components/Standardize/';
 import Faster from './components/Faster/';
 
-const Container = styled.div({
+const OuterContainer = styled.div({
+  overflow: 'hidden',
+  position: 'relative',
+  width: '100%'
+});
+
+const InnerContainer = styled.div({
   width: '90%',
   maxWidth: '1080px',
-  margin: '0 auto 100px auto',
+  margin: '0 auto',
 });
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <Advantages />
-      <Standardize />
-      <Faster />
-    </Container>
+    <OuterContainer>
+      <InnerContainer>
+        <Header />
+        <Advantages />
+        <Standardize />
+        <Faster />
+      </InnerContainer>
+    </OuterContainer>
   );
 }
 

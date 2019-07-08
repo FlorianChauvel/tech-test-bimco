@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+
 import { COLORS, FONT_SIZES } from '../../styles';
 
 const Container = styled.div({
@@ -8,7 +9,7 @@ const Container = styled.div({
     display: 'flex',
     flexFlow: 'column nowrap',
     justifyContent: 'center',
-    height: '100%'
+    height: '100%',
 });
 
 const Title = styled.h2({

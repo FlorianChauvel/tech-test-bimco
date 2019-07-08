@@ -7,18 +7,31 @@ import Left from './Left';
 import Right from './Right';
 import Footer from './Footer';
 
+import formeGris from '../../assets/Forme_Gris.svg';
+
 const Section = styled(BasicSection)({
-    marginTop: '100px',
+    marginTop: '250px',
+});
+
+const FormeGris = styled.img({
+    position: 'absolute',
+    zIndex: -1,
+    top: '600px',
+    left: '-100px',
+    overflow: 'hidden',
 });
 
 const Standardize = () => (
-    <Section>
-        <TwoColumnsWithFooter
-            left={<Left />}
-            right={<Right />}
-            footer={<Footer />}
-        />
-    </Section>
+    <>
+        <FormeGris src={formeGris} />
+        <Section>
+            <TwoColumnsWithFooter
+                left={<Left />}
+                right={<Right />}
+                footer={<Footer />}
+            />
+        </Section>
+    </>
 );
 
 export default Standardize;
