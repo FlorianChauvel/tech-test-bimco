@@ -9,10 +9,6 @@ import Footer from './Footer';
 
 import formeGris from '../../assets/Forme_Gris.svg';
 
-const Section = styled(BasicSection)({
-    marginTop: '250px',
-});
-
 const FormeGris = styled.img({
     position: 'absolute',
     zIndex: -1,
@@ -24,13 +20,13 @@ const FormeGris = styled.img({
 const Standardize = () => (
     <>
         <FormeGris src={formeGris} />
-        <Section>
+        <BasicSection>
             <TwoColumnsWithFooter
                 left={<Left />}
                 right={<Right />}
                 footer={<Footer />}
             />
-        </Section>
+        </BasicSection>
     </>
 );
 

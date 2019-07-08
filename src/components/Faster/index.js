@@ -9,10 +9,6 @@ import Footer from './Footer';
 
 import formeBleu from '../../assets/Forme_Bleu.svg';
 
-const Section = styled(ShadowSection)({
-    marginTop: '250px',
-});
-
 const Wrapper = styled.div({
     position: 'relative',
     height: '200px',
@@ -29,13 +25,13 @@ const FormeBleu = styled.img({
 
 const Standardize = () => (
     <>
-        <Section>
+        <ShadowSection>
             <TwoColumnsWithFooter
                 left={<Left />}
                 right={<Right />}
                 footer={<Footer />}
             />
-        </Section>
+        </ShadowSection>
         <Wrapper><FormeBleu src={formeBleu} /></Wrapper>
     </>
 );
