@@ -13,3 +13,6 @@ export const FONT_SIZES = {
     BUTTON: '14px',
 };
 
+export const FONT_WEIGHTS = {
+    BOLD: 700,
+}
