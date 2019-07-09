@@ -17,6 +17,7 @@ const BasicButton = styled.button(
         backgroundColor: COLORS.BUTTON_BACKGROUND_HOVERED,
     },
     fontSize: FONT_SIZES.TEXT,
+    cursor: 'pointer',
 }));
 
 export default BasicButton;
