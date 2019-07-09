@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const isElementVisible = (rect) => {
+export const isElementVisible = (rect) => {
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
     const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
 
@@ -27,7 +27,7 @@ const useIsInViewport = (nodeElement) => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         }
-    }, [nodeElement]);
+    });
 
     return [isInViewport];
 };
