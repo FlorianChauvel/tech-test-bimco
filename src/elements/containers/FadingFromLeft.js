@@ -8,7 +8,7 @@ const fadeIn = keyframes`
     }
 
     1% {
-        transform: translateX(-100px);
+        transform: translateX(-300px);
         opacity: 0;
     }
 
@@ -22,8 +22,8 @@ const FadingFromLeft = styled.div(
     ({ isVisible }) => 
     ({
         opacity: isVisible ? 1 : 0,
-        transition: 'opacity .75s ease',
-        animation: isVisible ? `${fadeIn} .75s ease` : '',
+        transition: 'opacity 2s ease',
+        animation: isVisible ? `${fadeIn} 2s ease` : '',
     })
 );
 
