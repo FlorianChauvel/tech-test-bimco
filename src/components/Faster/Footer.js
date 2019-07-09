@@ -8,7 +8,6 @@ const Container = styled.div({
     flexFlow: 'row nowrap',
     justifyContent: 'center',
     alignItems: 'middle',
-    marginTop: '35px',
     marginBottom: '35px',
 });
 

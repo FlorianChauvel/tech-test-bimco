@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 const BasicSection = styled.section({
-    marginTop: '250px',
+    marginTop: '200px',
 });
 
 export default BasicSection;

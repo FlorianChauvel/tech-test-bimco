@@ -1,39 +1,33 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from '@emotion/styled';
 
+import useIsInViewport from '../../utils/useIsInViewport';
 import ShadowSection from '../../elements/sections/ShadowSection';
 import TwoColumnsWithFooter from '../../layouts/TwoColumnsWithFooter';
+import FadingFromBottom from '../../elements/containers/FadingFromBottom';
 import Left from './Left';
 import Right from './Right';
 import Footer from './Footer';
 
-import formeBleu from '../../assets/Forme_Bleu.svg';
-
-const Wrapper = styled.div({
-    position: 'relative',
-    height: '100px',
-    width: '2000px',
-    overflowY: 'visible',
-    overflowX: 'visible',
-})
-const FormeBleu = styled.img({
-    position: 'relative',
-    zIndex: -1,
-    top: '-430px',
-    left: '-300px',
+const FadingFromBottomWithMargin = styled(FadingFromBottom)({
+    marginBottom: '100px',
 });
 
-const Standardize = () => (
-    <>
-        <ShadowSection>
-            <TwoColumnsWithFooter
-                left={<Left />}
-                right={<Right />}
-                footer={<Footer />}
-            />
-        </ShadowSection>
-        <Wrapper><FormeBleu src={formeBleu} /></Wrapper>
-    </>
-);
+const Faster = () => {
+    const sectionEl = useRef(null); 
+    const [isInViewPort] = useIsInViewport(sectionEl);
 
-export default Standardize;
+    return (
+        <FadingFromBottomWithMargin isVisible={isInViewPort}>
+            <ShadowSection ref={sectionEl}>
+                <TwoColumnsWithFooter
+                    left={<Left />}
+                    right={<Right />}
+                    footer={<Footer />}
+                />
+            </ShadowSection>
+        </FadingFromBottomWithMargin>
+    );
+};
+
+export default Faster;
