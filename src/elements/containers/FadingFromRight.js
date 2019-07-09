@@ -22,8 +22,8 @@ const FadingFromRight = styled.div(
     ({ isVisible }) => 
     ({
         opacity: isVisible ? 1 : 0,
-        transition: 'opacity .75s ease',
-        animation: isVisible ? `${fadeIn} .75s ease` : '',
+        transition: 'opacity 2s ease',
+        animation: isVisible ? `${fadeIn} 2s ease` : '',
     })
 );
 
