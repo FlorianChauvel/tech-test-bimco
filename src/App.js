@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Advantages from './components/Advantages';
 import Standardize from './components/Standardize/';
 import Faster from './components/Faster/';
+import BlueShape from './components/BlueShape';
+import GreyShape from './components/GreyShape';
 
 const OuterContainer = styled.div({
   overflow: 'hidden',
@@ -24,8 +26,10 @@ function App() {
       <InnerContainer>
         <Header />
         <Advantages />
+        <GreyShape />
         <Standardize />
         <Faster />
+        <BlueShape />
       </InnerContainer>
     </OuterContainer>
   );
