@@ -18,7 +18,7 @@ const Faster = () => {
     const [isInViewPort] = useIsInViewport(sectionEl);
 
     return (
-        <FadingFromBottomWithMargin isVisible={isInViewPort}>
+        <FadingFromBottomWithMargin isVisible={isInViewPort} opacityMs={2000} slideMs={2000}>
             <ShadowSection ref={sectionEl}>
                 <TwoColumnsWithFooter
                     left={<Left />}

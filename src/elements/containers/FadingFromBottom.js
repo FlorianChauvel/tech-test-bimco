@@ -1,5 +1,7 @@
-import styled from '@emotion/styled';
+import React from 'react';
 import { keyframes } from '@emotion/core';
+
+import BaseFading from './BaseFading';
 
 const fadeIn = keyframes`
     from {
@@ -18,13 +20,13 @@ const fadeIn = keyframes`
     }
 `;
 
-const FadingFromBottom = styled.div(
-    ({ isVisible }) => 
-    ({
-        opacity: isVisible ? 1 : 0,
-        transition: 'opacity 2s ease',
-        animation: isVisible ? `${fadeIn} 2s ease` : '',
-    })
+const FadingFromBottom = ({ children, ...otherProps }) => (
+    <BaseFading
+        animation={fadeIn}
+        {...otherProps}
+    >
+        {children}
+    </BaseFading>
 );
 
 export default FadingFromBottom;

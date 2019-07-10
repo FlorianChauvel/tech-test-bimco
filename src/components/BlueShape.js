@@ -19,7 +19,7 @@ const BlueShape = () => {
     const [isInViewport] = useIsInViewport(ref);
 
     return (
-        <Wrapper isVisible={isInViewport}>
+        <Wrapper isVisible={isInViewport} opacityMs={2000} slideMs={2000}>
             <Img src={blueShape} ref={ref} />
         </Wrapper>
     );

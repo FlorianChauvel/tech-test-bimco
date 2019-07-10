@@ -13,7 +13,7 @@ const Standardize = () => {
     const sectionEl = useRef(null);
     const [isInViewport] = useIsInViewport(sectionEl);
     return (
-        <FadingFromBottom isVisible={isInViewport}>
+        <FadingFromBottom isVisible={isInViewport} opacityMs={2000} slideMs={2000}>
             <BasicSection ref={sectionEl}>
                 <TwoColumnsWithFooter
                     left={<Left />}
