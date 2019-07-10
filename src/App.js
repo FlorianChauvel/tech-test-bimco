@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 import Header from './components/Header';
@@ -7,6 +7,7 @@ import Standardize from './components/Standardize/';
 import Faster from './components/Faster/';
 import BlueShape from './components/BlueShape';
 import GreyShape from './components/GreyShape';
+import { NAVBAR_BUTTONS } from './constants';
 
 const OuterContainer = styled.div({
   overflow: 'hidden',
@@ -21,10 +22,14 @@ const InnerContainer = styled.div({
 });
 
 function App() {
+  const [activeButton, setActiveButton] = useState(NAVBAR_BUTTONS.EXPLORE);
   return (
     <OuterContainer>
       <InnerContainer>
-        <Header />
+        <Header
+          activeButton={activeButton}
+          setActiveButton={(button) => setActiveButton(button)}
+        />
         <Advantages />
         <GreyShape />
         <Standardize />
